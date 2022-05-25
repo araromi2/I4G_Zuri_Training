@@ -5,14 +5,14 @@
 
 def read_file_content(filename):
     # [assignment] Add your code here 
-    with open(filename) as f:
-        return f.read()
+    with open(filename, "r") as f:
+        return str(f.read().splitlines())
 
-
+import string
 def count_words():
     text = read_file_content("story.txt")
-    text_list = text.split(" ")
+    mapp = text.maketrans(string.punctuation, " "*32)
+    ff = text.translate(mapp)
+    text_list = ff.split()
 
     return {i:text_list.count(i) for i in set(text_list)}
-
-    print(count_words())
