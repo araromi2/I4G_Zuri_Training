@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tribute Page for Bill Gate</title>
-</head>
-<style>
-    body{
-        background-color: navajowhite;
-    }
-    table{
-        margin-left: auto;
-        margin-right: auto;
-        border: 2px black solid;
-        border-radius: 10px;
-    }
-</style>
-<body>
-    <header>
-
-    </header>
-    <main>
-        <table style="width: 50%;">
-            <tr style="background-color:darkgray;">
-                <td style=""></td>
-                <td style="width: 200px; height: 200px;"><img src="Bill.avif" alt="" height="200px" width="200px"></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <ul style="text-align:center ;">
-                        <li> He is a good man</li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </main>
-    <footer>
-
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tribute Page for Bill Gate</title>
+    </head>
+    <style>
+        ul{
+            list-style-type:none;
+            margin:0;
+            padding-left:225px;
+            overflow: hidden;
+            background-color: black;
+        }
+        li{
+            float:left;
+        }
+        li a{
+            display:block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration:dotted;
+        }
+        li a:hover{background-color: darkgray;}
+        .cont{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding-bottom: 100px;
+        }
+        .center{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <body>
+        <header>
+            <div class="cont">
+                <ul>
+                    <li><small><a href="">Home</a></small></li>
+                    <li><small><a href="">Description</a></small></li>
+                    <li><small><a href="">Timeline</a></small></li>
+                </ul><br><br><br>
+                <h1>Bill Gate</h1>
+                <p style="margin: -10px;">America business magnate</p>
+            </div>
+            
+        </header>
+        <main>
+            <table class="center" style="width:60%">
+                <tr>
+                    <td>
+                        <blockquote style="text-align:justify; color:darkgrey">
+                            Bill Gate, with family name, William Henry Gates III was born on October 28,1955. He is a software developer, investor, author, and philanthropist. He is a co-founder of Microsoft, along with his late childhood friend Paul Allen. During his career at Microsoft, Gates held the positions of chairman, chief executive officer (CEO), president and chief software architect, while also being the largest individual shareholder until May 2014. He was a major entrepreneur of the microcomputer revolution of the 1970s and 1980s.
+                        </blockquote>
+                    </td>
+                    <td>
+                       <figure>
+                           <img src="Bill.avif" alt="Bill Gate" width="200px" height="200px" style="padding-top: 40px;">
+                           <figcaption style="color:darkgrey; text-align: center;">Bill Gate</figcaption>
+                       </figure>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer></footer>
+    </body>
 </html>
