@@ -5,26 +5,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tribute Page for Bill Gate</title>
+        <link rel="stylesheet" href="s">
     </head>
     <style>
-        ul{
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color:aliceblue;
+        }
+        .fre{
             list-style-type:none;
             margin:0;
             padding-left:225px;
             overflow: hidden;
             background-color: black;
         }
-        li{
+        .fro{
             float:left;
         }
-        li a{
+        .fro a{
             display:block;
             color: white;
             text-align: center;
             padding: 16px;
-            text-decoration:dotted;
+            text-decoration:none;
         }
-        li a:hover{background-color: darkgray;}
+        .fro a:hover{background-color: darkgray;}
         .cont{
             background-color: black;
             color: white;
@@ -35,37 +40,72 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .link{
+            background-color: darkgray;
+            color: white;
+            padding: 16px;
+            text-decoration: none;
+            text-align: center;
+        }
     </style>
     <body>
         <header>
             <div class="cont">
-                <ul>
-                    <li><small><a href="">Home</a></small></li>
-                    <li><small><a href="">Description</a></small></li>
-                    <li><small><a href="">Timeline</a></small></li>
+                <ul class="fre">
+                    <li class="fro"><small><a href="">Home</a></small></li>
+                    <li class="fro"><small><a href="#biography">Biography</a></small></li>
+                    <li class="fro"><small><a href="#timeline">Timeline</a></small></li>
                 </ul><br><br><br>
                 <h1>Bill Gate</h1>
                 <p style="margin: -10px;">America business magnate</p>
             </div>
             
-        </header>
+        </header><br><br><br>
         <main>
             <table class="center" style="width:60%">
                 <tr>
                     <td>
-                        <blockquote style="text-align:justify; color:darkgrey">
-                            Bill Gate, with family name, William Henry Gates III was born on October 28,1955. He is a software developer, investor, author, and philanthropist. He is a co-founder of Microsoft, along with his late childhood friend Paul Allen. During his career at Microsoft, Gates held the positions of chairman, chief executive officer (CEO), president and chief software architect, while also being the largest individual shareholder until May 2014. He was a major entrepreneur of the microcomputer revolution of the 1970s and 1980s.
+                        <blockquote id="biography" style="text-align:justify; color:darkgrey">
+                            Bill Gate, with family name, William Henry Gates III was born on October 28,1955. He is a software developer, investor, author, and philanthropist. He is a co-founder of Microsoft, along with his late childhood friend Paul Allen. During his career at Microsoft, Gates held the positions of chairman, chief executive officer (CEO), president and chief software architect, while also being the largest individual shareholder until May 2014. He was a major entrepreneur of the microcomputer revolution of the 1970s and 1980s. <br><br><br><a class ="link" href="https://en.wikipedia.org/wiki/Bill_Gates" target="_blank">Link to Biography</a>
                         </blockquote>
                     </td>
                     <td>
                        <figure>
-                           <img src="Bill.avif" alt="Bill Gate" width="200px" height="200px" style="padding-top: 40px;">
+                           <img src="Bill.avif" alt="Bill Gate" width="200px" height="200px" style="padding-top: 0px;">
                            <figcaption style="color:darkgrey; text-align: center;">Bill Gate</figcaption>
                        </figure>
                     </td>
                 </tr>
+            </table><br><br>
+
+            <table class="center" style="width:60%">
+                <tr>
+                    <th style="font-size: 20px;" id="timeline"><strong>Timeline</strong></th>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="color:darkgray;">
+                            <ul style="list-style-type:circle; text-align: justify;">
+                                <li>In January of 1975, he established Microsoft, the most successful computer software company, with his friend Paul Allen.</li>
+                                <li>In 1963, He co-developed the programming language, BASIC, for Altair.</li>
+                                <li>In 1981, He made the PC DOS Operating System deal with International Business Machines(IBM), one of the world's largest companies.</li>
+                                <li>In the 1987 issue of the Forbes magazine, he was listed among the 400 richest people in America and also the world's youngest self-made billionaire.</li>
+                                <li>In 1995, his company, Microsoft, came up with Windows 95, which turned out to be the OS that changed everything</li>
+                                <li>At the age of 39, he became the richest man in the world.</li>
+                                <li>Established in 1994, Bill and Melinda Gates foundation which was created by Bill Gate, have done notable charity works.</li>
+                                <li>Gates is among the pioneers of the personal computer revolution.</li>
+                                <li>He impacted the way the world works; more than 4 decades after, more than a billion PCs are in use today.</li>
+                                <li>In 2016, he won the presidential medal of freedom.</li>
+                           </ul> 
+                        </div>
+                       
+                    </td>
+                </tr>
             </table>
-        </main>
-        <footer></footer>
+            
+        </main><br><br><br><br><br>
+        <footer style="background-color:black ; color: white; text-align: center; padding-top:150px; ">
+            <small>Copyright 2000-2022 by Abdulhameed. All Rights Reserved</small>
+        </footer>
     </body>
 </html>
