@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-content: center;
+    background-color: rgb(255, 240, 219);
+}
+table {
+    border: 40px solid transparent;
+    border-color: rgb(118, 82, 72);
+    border-spacing: 0;
+    margin: auto;
+    table-layout: fixed;
+}
+.dark{
+    background-color: rgb(118, 82, 72);
+}
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 50px;
+    width: 50px;
+}
