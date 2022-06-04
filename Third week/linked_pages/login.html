@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class = "navigg">
+            <div class="header">
+                <h1>My Website</h1>
+            </div>
+            <div class="bar">
+                <div class="navbar">
+                    <a href="index.html">About Me</a>
+                    <a href="contact.html">Contact Me</a>
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+        </div>
+        <h2 class="login">Login Here</h2>
+    </header>
+    <main>
+        <div class="container">
+            <form autocomplete="on" method="post">
+                <label for="username">Username</label><br>
+                <input id="username" placeholder="Enter your username..." type="text" name="username" required><br>
+                <label for="password">Password</label><br>
+                <input id="password" placeholder="Enter your password..." type="password" name="password" required><br>
+                <input type="checkbox" name="checkbox" id="check">
+                <label id="val" for="check">Remember me</label><br>
+                <div class="forgot">
+                    <div>
+                        <a href="">Forgot your password?</a>
+                    </div>
+                    <div>
+                        <input id="submit" type="submit" name="submit" value="Sign In">
+                    </div>
+                </div>
+                
+            </form>
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+    
+        </div>    
+    </main>
+    <footer>
+    </footer>
+    
+</body>
+</html>

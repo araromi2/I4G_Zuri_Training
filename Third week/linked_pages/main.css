@@ -1,0 +1,193 @@
+body {
+    background-color: #f2f2f2;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.navigg{
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 5px 0 #000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    font-weight: lighter; font-style: oblique;
+    color: #145388;
+    
+}
+
+.navbar{
+    display: flex;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    background-color: #e7332b;
+    border-radius: 30px;
+    border-style: none;
+}
+.navbar a:hover{
+    background-color: #145388;
+    border-radius: 30px;
+    border-style: none;
+}
+
+form input[type="text"], input[type="password"],select, textarea, input[type = "email"], input[type = "tel"]{
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px black;
+    box-sizing: border-box;
+}
+
+.forgot{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+  }
+.forgot > div{
+    margin: 5px;
+    align-items: baseline;
+}
+.forgot > div > input[type="submit"]{
+    color: #fff;
+    padding: 15px 20px;
+    background-color: #e7332b;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 30px;
+    font-size: large;
+    border-style: none;
+}
+.forgot > div > input[type="submit"]:hover{
+    background-color: #145388;
+    border-radius: 30px;
+    border-style: none;
+}
+
+p a{
+    color: #333;
+}
+p a:hover{
+    color: #145388;
+}
+
+footer p{
+    text-align: center;
+    font-weight: lighter;
+    font-style: oblique;
+    color: #145388;
+}
+
+
+/* ------------Exclusive to contact.html and register.html------------- */
+.general{
+    padding-left: 85px;
+    text-align:left;
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: oblique;
+    margin: 40px 0 0 5px;
+    color: #145388;
+}
+.general + p{
+    padding-left: 90px;
+    margin: 5px 0 50px 0;
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: oblique;
+    color: #333;
+}
+
+.container_ {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 black;
+}
+
+
+
+/* ----------------Exclusive to login.html--------------- */
+.login{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 30px;
+    font-style: oblique;
+    margin-top: 40px;
+    color: #145388;
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 black;
+}
+
+input[type="checkbox"] {
+    visibility:hidden;
+  }
+  label {
+    cursor: pointer;
+  }
+  input[type="checkbox"] + label:before {
+    border: 1px solid #333;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .25em 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 16px;
+  }
+  input[type="checkbox"]:checked + label:before {
+    color:#fff;
+    background-color: #145388;
+    content: "\2713";
+    text-align: center;
+  }
+  
+.forgot > div > a{
+    color:#333;
+}
+.forgot > div > a:hover{
+    color: #145388;
+}
+
+/* Exclusive to register.html */
+.full, .contact{
+    display: flex;
+    align-items: center;
+  }
+  .full > div{
+    margin: 5px;
+    align-items: baseline;
+}
+.contact > div{
+    margin: 5px;
+    align-items: baseline;
+}
+.first, .phone{
+    flex: 50%;
+}
+.last, .email{
+    flex: 50%;
+}
+
+/* Exclusive to contact.html */
+textarea{
+    resize: vertical;
+}
