@@ -1,6 +1,6 @@
 body {
     background-color: #f2f2f2;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:sans-serif;
 }
 
 .navigg{
@@ -107,7 +107,7 @@ footer p{
 
 .container_ {
     width: 100%;
-    max-width: 1300px;
+    max-width: 900px;
     margin: 0 auto;
     background-color: #fff;
     padding: 50px;
@@ -190,4 +190,88 @@ input[type="checkbox"] {
 /* Exclusive to contact.html */
 textarea{
     resize: vertical;
+}
+
+/* Exclusive to index.html */
+.about{
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 black;
+}
+.image{
+    flex: 60%;
+}
+.image img{
+    border-radius: 50%;
+}
+.me{
+    flex: 40%;
+    width: 100%;
+    text-align:justify;
+    padding-left: 100px;
+}
+.birth, .tele, .mail, .house{
+    display: flex;
+    align-items: center;
+}
+.birth > div{
+    margin: 5px;
+}
+.tele > div{
+    margin: 5px;
+}
+.mail > div{
+    margin: 5px;
+}
+.house > div{
+    margin: 5px;
+}
+.section_{
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.section_ > div{
+    margin: 15px;
+}
+.hobbies, .priorities, .skills{
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 black;
+    border-radius: 20px;
+    width: 500px;
+    height: 250px;
+    padding: 20px 50px 50px;
+    font-size: 20px;
+
+}
+.big_a{
+    display:flex;
+    justify-content:flex-end;
+}
+.big_a a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    background-color: #e7332b;
+    border-radius: 30px;
+    border-style: none;
+    justify-items: end;
+}
+.big_a a:hover{
+    background-color: #145388;
+    border-radius: 30px;
+    border-style: none;
 }
