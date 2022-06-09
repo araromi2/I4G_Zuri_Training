@@ -106,7 +106,7 @@ footer p{
 }
 
 .container_ {
-    width: 100%;
+    /* width: 100%; */
     max-width: 900px;
     margin: 0 auto;
     background-color: #fff;
@@ -127,7 +127,7 @@ footer p{
     color: #145388;
 }
 .container {
-    width: 100%;
+    /* width: 100%; */
     max-width: 400px;
     margin: 0 auto;
     background-color: #fff;
@@ -195,7 +195,7 @@ textarea{
 /* Exclusive to index.html */
 .about{
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     max-width: 900px;
     margin: 0 auto;
     background-color: #fff;
@@ -234,8 +234,8 @@ textarea{
 }
 .section_{
     display: flex;
-    width: 100%;
-    max-width: 1300px;
+    /* width: 100%; */
+    max-width: 1000px;
     margin: 0 auto;
     padding: 50px;
     margin-top: 50px;
@@ -250,10 +250,10 @@ textarea{
     background-color: #fff;
     box-shadow: 0 0 5px 0 black;
     border-radius: 20px;
-    width: 500px;
-    height: 250px;
+    width: 200px;
+    height: 150px;
     padding: 20px 50px 50px;
-    font-size: 20px;
+    font-size: 1vw;
 
 }
 .big_a{
