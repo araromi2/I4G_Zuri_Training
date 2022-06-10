@@ -195,68 +195,40 @@ textarea{
 /* Exclusive to index.html */
 .about{
     display: flex;
-    /* width: 100%; */
-    max-width: 900px;
-    margin: 0 auto;
+    margin: 50px 15px 0 15px;
     background-color: #fff;
     padding: 50px;
-    margin-top: 50px;
     border-radius: 20px;
     box-shadow: 0 0 5px 0 black;
-}
-.image{
-    flex: 60%;
-}
-.image img{
-    border-radius: 50%;
-}
-.me{
-    flex: 40%;
-    width: 100%;
-    text-align:justify;
-    padding-left: 100px;
-    font-size: 1vw;
-    overflow: auto;
-}
-.birth, .tele, .mail, .house{
-    display: flex;
-    align-items: center;
-}
-.birth > div{
-    margin: 5px;
-}
-.tele > div{
-    margin: 5px;
-}
-.mail > div{
-    margin: 5px;
-}
-.house > div{
-    margin: 5px;
-}
-.section_{
-    display: flex;
-    /* width: 100%; */
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 50px;
-    margin-top: 50px;
-    border-radius: 20px;
     justify-content: center;
     align-items: center;
 }
-.section_ > div{
+.about .about_{
+    width:50%;
     margin: 15px;
+    text-align:justify;
 }
-.hobbies, .priorities, .skills{
+.about_ #me{
+    border-radius: 50%;
+}
+.gif{
+    vertical-align: middle;
+    
+}
+.section_{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 50px 0;
+    width: 100%;
+    border-radius: 20px;
+}
+.section_ .sec{
     background-color: #fff;
     box-shadow: 0 0 5px 0 black;
     border-radius: 20px;
-    max-width: 200px;
-    height: 150px;
-    padding: 20px 50px 50px;
-    font-size: 1vw;
-    overflow: auto;
+    margin: 15px;
+    width: 33.3333%;
+    padding: 20px 40px 40px;
 
 }
 .big_a{
