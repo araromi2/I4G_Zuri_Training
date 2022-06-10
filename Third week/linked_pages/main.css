@@ -137,7 +137,7 @@ footer p{
 }
 
 input[type="checkbox"] {
-    visibility:hidden;
+    display:none;
   }
   label {
     cursor: pointer;
