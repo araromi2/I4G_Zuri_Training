@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+main > div {
+    padding: 35px;
+}
+main .sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+
+}
+main .suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+main .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+main .sedans button {
+    color: hsl(31, 77%, 52%);
+}
+main .suvs button {
+    color: hsl(184, 100%, 22%);
+}
+main .luxury button {
+    color: hsl(179, 100%, 13%);
+}
+main .sedans button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+main .suvs button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+main .luxury button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", "san-serif";
+    margin: 30px 0;
+}
+button {
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", "san-serif";
+    border: solid 2px hsla(0, 0%, 100%, 0.75);
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 30px 0;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 0 0 30px;
+    font-family: "Lexend Deca", "san-serif";
+    font-size: 10px;
+}
+@media(min-width: 375px) {
+    main {
+        width: 50%;
+    }
+}

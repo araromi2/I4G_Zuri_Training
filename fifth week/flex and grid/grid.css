@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(252, 62%, 8%);
+    height: 100vh;
+    display: flex;
+    place-items: center;
+}
+
+main{
+    display: grid;
+    grid-template-areas: "item-1 item-1 item-1 item-2 item-2"
+                        "item-1 item-1 item-1 item-2 item-2"
+                        "item-1 item-1 item-1 item-2 item-2"
+                        "item-3 item-3 item-4 item-4 item-4"
+                        "item-3 item-3 item-4 item-4 item-4"
+                        "item-3 item-3 item-5 item-5 item-5"
+                        "item-3 item-3 item-5 item-5 item-5"
+                        "item-3 item-3 item-5 item-5 item-5";
+    width: 50%;
+    margin: auto;
+    grid-auto-rows: minmax(50px, auto);
+    gap: 10px;
+}
+.item-1{
+    grid-area: item-1;
+    background-color: hsl(13, 63%, 53%);
+}
+
+.item-2{
+    grid-area: item-2;
+    background-color: hsl(33, 71%, 52%);
+}
+.item-3{
+    grid-area: item-3;
+    background-color: hsl(123, 76%, 36%);
+}
+.item-4{
+    grid-area: item-4;
+    background-color: hsl(190, 74%, 47%);
+}
+.item-5{
+    grid-area: item-5;
+    background-color: hsl(190, 74%, 47%);
+}
