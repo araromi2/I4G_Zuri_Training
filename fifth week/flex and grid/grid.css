@@ -9,7 +9,14 @@ body{
     display: flex;
     place-items: center;
 }
-
+header>a{
+    color: white;
+    text-decoration: none;
+}
+header>a:hover{
+    text-decoration: none;
+    border-bottom: 3px solid hsl(31, 77%, 52%) ;
+}
 main{
     display: grid;
     grid-template-areas: "item-1 item-1 item-1 item-2 item-2"
@@ -20,8 +27,9 @@ main{
                         "item-3 item-3 item-5 item-5 item-5"
                         "item-3 item-3 item-5 item-5 item-5"
                         "item-3 item-3 item-5 item-5 item-5";
-    width: 50%;
+    width: 100%;
     margin: auto;
+    padding: 100px;
     grid-auto-rows: minmax(50px, auto);
     gap: 10px;
 }
