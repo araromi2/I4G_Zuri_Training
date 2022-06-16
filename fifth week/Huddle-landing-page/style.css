@@ -51,14 +51,14 @@ main{
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
-    gap: 40px;
+    gap: 60px;
 }
 .mockup-head img{
-    width: 800px;
+    width: 600px;
     height: auto;
 }
 .mockup-text p{
-    font-weight: 700;
+    font-weight: 400;
     margin: 35px 0;
     color: hsl(192, 100%, 9%);
 }
@@ -73,6 +73,189 @@ main{
     font-size: smaller;
     border-radius: 25px;
 }
+.mockup-text a:hover{
+    background-color: hsl(322, 100%, 86%);
+    cursor: pointer;
+}
 .huddle-main{
-    padding:100px 40px 100px 40px;
+    padding:150px 60px 0 60px;
+}
+.grow-together, .flowing-conversations, .your-users{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 15px 40px 80px;
+    border: 1px solid hsl(193, 100%, 96%);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px hsl(193, 100%, 96%), -3px -3px 10px hsl(193, 100%, 96%);
+    gap: 60px;
+    margin: 0 0 50px 0;
+}
+.grow-together img, .flowing-conversations img, .your-users img{
+    width: 500px;
+    height: auto;
+}
+.grow-together p, .flowing-conversations p, .your-users p{
+    font-weight: 400;
+    color: hsl(208, 11%, 55%);
+}
+.ready-build{
+    display: flex;
+    width: 50%;
+    margin: 100px auto -30px auto;
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid hsl(193, 100%, 96%);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px hsl(193, 100%, 96%), -3px -3px 10px hsl(193, 100%, 96%);
+    padding: 40px;
+    gap: 30px;
+}
+.ready-build a{
+    text-decoration: none;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: smaller;
+    border-radius: 25px;
+}
+.ready-build a:hover{
+    background-color: hsl(322, 100%, 86%);
+    cursor: pointer;
+}
+
+.huddle-footer{
+    display: flex;
+    background-color: hsl(192, 100%, 9%);
+    align-items: center;
+    z-index: 1;
+    justify-content: space-between;
+    padding:150px 100px 0 50px;
+    gap: 60px;
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 30%;
+    gap: 50px;
+}
+.footer-left img{
+    width: 200px;
+    height: auto;
+    color:hsl(193, 100%, 96%);
+}
+.footer-left p{
+    font-weight: 400;
+    color: hsl(208, 11%, 55%);
+    margin-bottom: 40px;
+}
+/*  */
+
+.footer-right{
+    display: flex;
+    justify-content: space-between;
+}
+ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: hsl(193, 100%, 96%);
+    font-weight: 400;
+    font-size: smaller;
+}
+.footer-text i{
+    color: hsl(193, 100%, 96%);
+    margin-right: 10px
+}
+.huddle-footer a{
+    text-decoration: none;
+    color: hsl(208, 11%, 55%);
+    font-weight: 400;
+    font-size: smaller;
+}
+.huddle-footer a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-right i{
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid hsl(193, 100%, 96%);
+    color:hsl(193, 100%, 96%);
+    border-radius: 50%;
+}
+.footer-right i:hover{
+    cursor: pointer;
+    color: hsl(322, 100%, 66%);
+}
+footer{
+    text-align: right;
+    color: hsl(193, 100%, 96%);
+    font-weight: 400;
+    font-size: xx-small;
+    background-color: hsl(192, 100%, 9%);
+    padding: 20px;
+}
+@media screen and (max-width: 768px){
+    .huddle-head{
+        padding:30px 10px 50px 10px;
+    }
+    .huddle-main{
+        padding:50px 10px 0 10px;
+    }
+    .huddle-footer{
+        padding:50px 10px 0 10px;
+    }
+    body{
+        font-size: 12px;
+    }
+    .mockup-head{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .mockup-head img{
+        width: 100%;
+        height: auto;
+    }
+    .grow-together, .your-users{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .flowing-conversations{
+        flex-direction:column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .grow-together, .flowing-conversations, .your-users{
+        padding: 20px 10px 20px 10px;
+    }
+    .grow-together img, .flowing-conversations img, .your-users img{
+        width: 300px;
+        height: auto;
+    }
+    .ready-build{
+        width: 100%;
+    }
+    .huddle-footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+    .footer-right{
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
 }
