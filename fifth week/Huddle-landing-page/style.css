@@ -147,7 +147,9 @@ main{
 .footer-left img{
     width: 200px;
     height: auto;
-    color:hsl(193, 100%, 96%);
+    filter:grayscale(100%);
+    filter: brightness(0%);
+    filter: invert(98%) sepia(100%) saturate(7%) hue-rotate(117deg) brightness(101%) contrast(102%);
 }
 .footer-left p{
     font-weight: 400;
