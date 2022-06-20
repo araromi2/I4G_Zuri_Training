@@ -13,17 +13,13 @@ h1,h2{
     font-family: "Poppins", serif;
     font-weight: 600;
 }
-main{
-    display: grid;
-    /* grid-template-rows: 2fr 4fr 1fr; */
-}
 .huddle-head{
     background-image: url(images/bg-hero-desktop.svg);
     background-repeat: no-repeat;
     background-color: hsl(193, 100%, 96%);
     padding:30px 40px 70px 40px;
 }
-.logo{
+.huddle-head .logo{
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -102,16 +98,16 @@ main{
 .ready-build{
     display: flex;
     width: 50%;
-    margin: 100px auto -30px auto;
-    z-index: 2;
+    position: relative;
+    margin: 100px auto -60px auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 1px solid hsl(193, 100%, 96%);
     border-radius: 10px;
-    box-shadow: 3px 3px 10px hsl(193, 100%, 96%), -3px -3px 10px hsl(193, 100%, 96%);
     padding: 40px;
     gap: 30px;
+    background-color: white;
 }
 .ready-build a{
     text-decoration: none;
@@ -132,7 +128,7 @@ main{
     display: flex;
     background-color: hsl(192, 100%, 9%);
     align-items: center;
-    z-index: 1;
+    z-index: -1;
     justify-content: space-between;
     padding:150px 100px 0 50px;
     gap: 60px;
@@ -141,7 +137,6 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 30%;
     gap: 50px;
 }
 .footer-left img{
@@ -187,17 +182,17 @@ ul li{
 .footer-right i{
     margin: 0 5px;
     padding: 5px;
-    border: 1px solid hsl(193, 100%, 96%);
-    color:hsl(193, 100%, 96%);
+    border: 1px solid hsl(208, 11%, 55%);;
+    color:hsl(208, 11%, 55%);;
     border-radius: 50%;
 }
 .footer-right i:hover{
     cursor: pointer;
     color: hsl(322, 100%, 66%);
 }
-footer{
+.foot{
     text-align: right;
-    color: hsl(193, 100%, 96%);
+    color: hsl(208, 11%, 55%);;
     font-weight: 400;
     font-size: xx-small;
     background-color: hsl(192, 100%, 9%);
@@ -211,7 +206,7 @@ footer{
         padding:50px 10px 0 10px;
     }
     .huddle-footer{
-        padding:50px 10px 0 10px;
+        padding:100px 10px 0 10px;
     }
     body{
         font-size: 12px;
@@ -247,17 +242,27 @@ footer{
     }
     .ready-build{
         width: 100%;
+        text-align: center;
     }
     .huddle-footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: left;
+        gap: 10px;
+        
     }
-    .footer-right{
+    .footer-left{
         text-align: center;
+        gap:20px;
     }
-    footer{
+    .footer-left p{
+        margin-bottom: 15px;
+    }
+    .footer-mid-1, .footer-mid-2{
+        align-items: flex-start;
+        gap: 60px;
+    }
+    .foot{
         text-align: center;
     }
 }
