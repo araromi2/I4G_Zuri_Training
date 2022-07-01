@@ -137,6 +137,7 @@ h1,h2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 33%;
     gap: 50px;
 }
 .footer-left img{
@@ -198,7 +199,7 @@ ul li{
     background-color: hsl(192, 100%, 9%);
     padding: 20px;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
     .huddle-head{
         padding:30px 10px 50px 10px;
     }
